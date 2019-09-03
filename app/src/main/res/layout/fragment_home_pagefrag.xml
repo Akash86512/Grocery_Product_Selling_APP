@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePagefrag">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <com.smarteist.autoimageslider.SliderLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:id="@+id/imageslider"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/imageslider"
+                    android:background="@color/colorAccent"
+                   android:layout_margin="1dp"
+                    android:id="@+id/viewall"
+                    android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/white1"
+                    android:layout_marginRight="10dp"
+                    android:text="View all"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white1"
+                    android:text="Products"/>
+
+
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewall"
+                    android:layout_above="@+id/order"
+                    android:id="@+id/recyclemainpage"/>
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Products Category"
+
+                    android:textColor="@color/white1"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:gravity="center"
+             android:layout_margin="4dp"
+             android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="160dp"
+                android:elevation="15dp"
+                android:id="@+id/card1"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/image1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:id="@+id/categoryname1"
+                        android:textStyle="bold"
+                        android:text="Beverages"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:id="@+id/noofproduct1"
+                        android:text="90 products"/>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+             <android.support.v7.widget.CardView
+                 android:layout_width="160dp"
+                 android:layout_marginLeft="10dp"
+                 android:elevation="15dp"
+                android:id="@+id/card2"
+                 android:layout_height="wrap_content">
+
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:layout_width="160dp"
+                         android:layout_height="130dp"
+                         android:id="@+id/image2"
+                        />
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:textSize="15sp"
+                         android:id="@+id/categoryname2"
+                         android:textStyle="bold"
+                         android:text="Snacks"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:textSize="15sp"
+                         android:id="@+id/noofproduct2"
+                         android:text="90 products"/>
+
+                 </LinearLayout>
+
+
+
+             </android.support.v7.widget.CardView>
+
+
+         </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card3"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image3"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname3"
+                            android:textStyle="bold"
+                            android:text="Dairy"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct3"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card4"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image4"
+                          />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname4"
+                            android:textStyle="bold"
+                            android:text="Bread-Bakery"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct4"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card5"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image5"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname5"
+                            android:textStyle="bold"
+                            android:text="Produce"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct5"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card6"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image6"
+                           />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname6"
+                            android:textStyle="bold"
+                            android:text="Mashala"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct6"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card7"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image7"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname7"
+                            android:textStyle="bold"
+                            android:text="Personal Care"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct7"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card8"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image8"
+                           />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname8"
+                            android:textStyle="bold"
+                            android:text="Beverages"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct8"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card9"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image9"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname9"
+                            android:textStyle="bold"
+                            android:text="Beverages"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct9"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="15dp"
+                    android:id="@+id/card10"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image10"
+                           />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/categoryname10"
+                            android:textStyle="bold"
+                            android:text="Other"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:id="@+id/noofproduct10"
+                            android:text="90 products"/>
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Brand"
+
+                    android:textColor="@color/white1"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclecategory"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
